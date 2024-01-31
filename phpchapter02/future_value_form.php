@@ -10,7 +10,13 @@
   </head>
   <body>
     <h1>Future Value Calculator</h1>
-
+    <?php
+      if( !empty($error_message) ) {
+        echo "<p>";
+        echo $error_message;
+        echo "</p>";
+      }
+    ?>
     <!-- Slide 63 -->
     <form action="future_value_results.php" method="post">
       <label>Investment Amount:</label>
