@@ -1,0 +1,44 @@
+h1, h2, body {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  background-color: #b6c2d9;
+}
+#first {
+  background-color: #5b8bb4;
+}
+.details {
+  background-color: #9e90a2;
+}
+img {
+  float: left;
+  margin-right: 1em;
+}
+a[href] {
+  font-family: "Trebuchet MS" "Lucida Grande", sans-serif;
+}
+/* unvisited link */
+a:link {
+  color: #272932;
+}
+a:focus, a:hover {
+  color: #828489;
+}
+a:active {
+  color: #5b8bb4;
+}
+a:visited {
+  color: #9390a2;
+}
+/* chapter 5 html/css */
+body {
+  border: 3px dotted #828489;
+  margin: 15px;
+}
+main {
+  border: 2px solid #5b8bb4;
+  width: 500px;
+  margin: 20px;
+  padding: 10px;
+}
+h1, h2 {
+  border: 1px dashed #9e90a2;
+}
