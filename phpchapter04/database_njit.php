@@ -6,7 +6,7 @@
   $password = 'YOURDBPASSWORD';
 
   try {
-    $db = now PDO($dsn, $username, $password);
+    $db = new PDO($dsn, $username, $password);
     echo '<p>You are connected to the NJIT database!</p>';
   } catch (PDOException $ex) {
     $error_message = $ex->getMessage();
