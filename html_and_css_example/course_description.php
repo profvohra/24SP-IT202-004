@@ -10,7 +10,7 @@
         <li id="first">Subject: IT</li>
         <li>Number: 302</li>
         <li>Credit: 3</li>
-        <li>Prerequisite: IT 2020 or IS 218</li>
+        <li>Prerequisite: IT 202 or IS 218</li>
         <li>Textbooks:
           <a href="https://greglim.gumroad.com/l/nhcqq" target="_blank" >Beginner MERN Stack by Greg Lim</a>
         </li>

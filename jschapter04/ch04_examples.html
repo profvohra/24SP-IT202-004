@@ -1,0 +1,81 @@
+<html>
+  <body>
+    <h1>JavaScript Chapter 4 Examples</h1>
+    <script>
+      // Slide 9
+      const confirmDelete = confirm("Are you sure you want to delete this item?");
+      if(confirmDelete) {
+        // code that deletes the item
+        console.log("delete was confirmed");
+      } else {
+        console.log("delete was canceled");
+      }
+    </script>
+    <!-- Slide 12 -->
+    <h4>Change the color of the first paragraph element.</h4>
+    <p>This is a paragraph element.</p>
+    <p>Change the color of the element with id="rate"</p>
+    <p id="rate">This is a paragraph element with id="rate"</p>
+    <p class="error">This is a paragraph element with class="error"</p>
+    <script>
+      // Slide 12
+      let first_p_element = document.querySelector("p");
+      first_p_element.style.color = "green";
+      document.querySelector("#rate").style.color = "blue";
+      document.querySelector(".error").style.color = "red";
+
+      const node_list = document.querySelectorAll("p");
+      for(let index = 0; index < node_list.length; index++) {
+        node_list[index].style.backgroundColor = "yellow";
+      }
+      // Slide 21
+      const today = new Date();
+      document.write(today.toDateString());
+      document.write("<br>");
+      document.write(today.getDate());
+      document.write("<br>");
+      document.write(today.getMonth());
+      document.write("<br>");
+      // Slide 25
+      // function declaration example
+      function showYear() {
+        const today = new Date();
+        document.write("<p>");
+        document.write("The year is " + today.getFullYear());
+        document.write("</p>");
+      }
+      // call/invoke the showYear function
+      showYear();
+      // Slide 31
+      // function expression example
+      const calculateTax = function(subtotal, taxRate) {
+        const tax = subtotal * taxRate;
+        return tax.toFixed(2);
+      }
+      // call/invoke the calculateTax function
+      const subtotal = 85;
+      const taxRate = 0.05;
+      const salesTax = calculateTax(subtotal, taxRate);
+      document.write("<p>");
+      document.write("The sales tax is " + salesTax);
+      document.write("</p>");
+      const salesTax2 = calculateTax(20, 0.06);
+      document.write("<p>");
+      document.write("The sales tax is " + salesTax2);
+      document.write("</p>");
+      // Slide 33
+      // arrow function example
+      const calculateTax2 = subtotal => (subtotal * 0.074).toFixed(2);
+      const salesTax3 = calculateTax2(25);
+      document.write("<p>");
+      document.write("The sales tax is " + salesTax3);
+      document.write("</p>");
+
+      const getCurrentUrl = () => {
+        return document.location.href;
+      }
+      const url = getCurrentUrl();
+      console.log("url = " + url);
+    </script>
+  </body>
+</html>
