@@ -76,6 +76,26 @@
       }
       const url = getCurrentUrl();
       console.log("url = " + url);
+      // Slide 36
+      // variable scope
+      function local() {
+        // declare index using 'var' keyword
+        for(var index = 0; index < 5; index++) {
+          console.log("index = " + index);
+        }
+        // Can we access 'index' after for-loop?
+        console.log("after for-loop, index = " + index);
+        // Yes, 'index' is within function-scope
+
+        // declare count using 'let' keyword
+        for(let count = 0; count < 5; count++) {
+          console.log("count = " + count);
+        }
+        // Can we access 'count' after for-loop?
+        console.log("after for-loop, count = " + count);
+        // No, 'count' is within block-scope
+      }
+      local();
     </script>
   </body>
 </html>
